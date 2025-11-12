@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> CV de Chloé Makoundou </title>
+    <!--link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Navigation</h2>
+            <button class="menu-item active" data-page="info">Informations</button>
+            <button class="menu-item" data-page="diplome">Diplômes</button>
+            <button class="menu-item" data-page="experience">Expériences</button>
+            <button class="menu-item" data-page="langue">Langues</button>
+            <button class="menu-item" data-page="loisirs">Loisirs</button>
+        </div>
+
+        <div class="content">
+            <button class="back-btn" onclick="goBack()">Retour</button>
+
+            <!-- Page 1: Informations Personnelles -->
+            <div class="page active" id="info">
+                <h1>Informations Personnelles</h1>
+                <div class="info-grid">
+                    <div class="info-label">Nom :</div>
+                    <div class="info-value">MAKOUNDOU Chloé</div>
+                    
+                    <div class="info-label">Email :</div>
+                    <div class="info-value">chloe.makpro@email.com</div>
+                    
+                    <div class="info-label">Adresse :</div>
+                    <div class="info-value">Région Parisienne, Val D'Oise</div>
+
+                    <div class="info-label">Site web :</div>
+                    <div class="info-value">
+                        <a href="https://www.linkedin.com/in/cmakoundou/"> Linkedin</a>
+                        <a href="https://chlooow.github.io/github-portfolio/">Portfolio</a>
+                    </div>
+                    
+                </div>
+                
+                <div class="section-card">
+                    <h3>À propos de moi</h3>
+                    <p> Étudiante en Informatique & Big Data et Mentee pour le programme Women@Dior je suis
+                         à la recherche d'un stage de 3 mois minimum en 2026 
+                        pour mettre en pratique mes compétences et contribuer à des projets innovants.</p>
+                </div>
+
+                <div class="skills-container">
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">OCaml</span>
+                    <span class="skill-tag">Bibliotheque Python DataScience</span>
+                </div>
+            </div>
+
+            <!-- Page 2: Diplômes -->
+            <div class="page" id="diplome">
+                <h1>Diplômes & Formation</h1>
+                
+                <div class="section-card">
+                    <div class="date">2025 - 2026</div>
+                    <h3>Master 1 </h3>
+                    <p><strong>Université Paris 8 Saint-Denis-Vincennes </strong></p>
+                    <p>Informatique & Big Data</p>
+                </div>
+
+                <div class="section-card">
+                    <div class="date">2019 - 2025</div>
+                    <h3>Licence Informatique</h3>
+                    <p><strong>Université Paris-Saclay</strong></p>
+                    <p>Formation généraliste en informatique couvrant programmation, réseaux et bases de données...</p>
+                </div>
+
+                <div class="section-card">
+                    <div class="date">2019</div>
+                    <h3>Baccalauréat Scientifique</h3>
+                    <p><strong>Louis Armand, Eaubonne</strong></p>
+                    <p>Option ISN - Mention Anglais Européenne</p>
+                </div>
+
+                <div class="section-card">
+                    <h3>Certifications</h3>
+                    <p>• Oracle - OCI AI Fondations</p>
+                    <p>• IBM AI Fundamentals</p>
+                    <p>• Introduction to Data Science Cisco </p>
+                    <p>• Introduction to Cybersecurity Cisco</p>
+                    <p>• TOEIC - 790/990 (2021)</p>
+                    <p>• Lingualskill - 175/180 (2024)</p>
+                    <p>• Cambridge B2 section européenne (2016-2018)</p>
+                </div>
+            </div>
+
+            <!-- Page 3: Expériences -->
+            <div class="page" id="experience">
+                <h1>Expériences Professionnelles</h1>
+                
+                <div class="section-card">
+                    <div class="date">Mars 2025 - Juin 2025</div>
+                    <h3>Stage Développese Web</h3>
+                    <p><strong>TDF, Paris</strong></p>
+                    <p>• Développer et optimiser des fonctionnalités backend en Python avec des technologies comme Flask, Netmiko et Jinja.</p>
+                    <p>• Améliorer l’expérience utilisateur en intégrant du tri et de l’export de données (HTML/CSS/JavaScript).</p>
+                    <p>• Créer des visualisations dynamiques sous forme de graphiques pour l’analyse des données.</p>
+                    <p>• Sécuriser l’application en mettant en place une gestion des accès et des mises à jour des fichiers sources.</p>
+                </div>
+
+                <div class="section-card">
+                    <div class="date">Juillet 2024 - Aout 2024</div>
+                    <h3>Volontaire Paris 2024</h3>
+                    <p><strong>1er et 8eme arrondissement, Paris</strong></p>
+                    <p>• Sélectionnée parmi plus de 300 000 candidatures pour rejoindre l’équipe de 45 000 volontaires des Jeux Olympiques de Paris 2024 et de la Mairie de Paris.</p>
+                    <p>• Missions d’accueil, d’orientation et d’information auprès de spectateurs internationaux sur le site Concorde / Grand Palais (Champs-Élysées).</p>
+                    <p>• Contribution à l’organisation de l’événement pour des milliers de visiteurs, participant à la gestion efficace de la circulation et de l’information sur site.</p>
+                    <p>• Développement de compétences en gestion de foule, communication interculturelle (Français, Anglais, Espagnole) et travail en équipe multidisciplinaire.</p>
+                </div>
+
+                <div class="section-card">
+                    <div class="date">Aout 2023 - Juin 2024</div>
+                    <h3>Preneuse de note</h3>
+                    <p><strong>Digital Agency, Paris</strong></p>
+                    <p>• Prise et organisation de notes détaillées pour 9 matières incluant programmation, algorithmique, logique et réseaux.</p>
+                    <p>• Retranscription des cours et TD sur la page Ecampus du service handicap de Paris-Saclay, facilitant l’accès au contenu pour les étudiants ayant besoin de support.</p>
+                    <p>• Gestion efficace de l’information et structuration des contenus pour une lecture claire et exploitable.</p>
+                    <p>• Développement de compétences en synthèse, organisation et partage collaboratif de données.</p>
+                </div>
+            </div>
+
+            <!-- Page 4: Langues -->
+            <div class="page" id="langue">
+                <h1>Compétences Linguistiques</h1>
+                
+                <div class="language-item">
+                    <span class="language-name">🇫🇷 Français</span>
+                    <span class="language-level">Langue maternelle</span>
+                </div>
+
+                <div class="language-item">
+                    <span class="language-name">🇬🇧 Anglais</span>
+                    <span class="language-level">Courant (C1)</span>
+                </div>
+
+                <div class="language-item">
+                    <span class="language-name">🇪🇸 Espagnol</span>
+                    <span class="language-level">Intermédiaire (B1)</span>
+                </div>
+
+                <div class="language-item">
+                    <span class="language-name">🇰🇷 Coréen</span>
+                    <span class="language-level">Notions (A1)</span>
+                </div>
+
+                <div class="language-item">
+                    <span class="language-name">🇨🇬 Kikongo</span>
+                    <span class="language-level">Notions (A1)</span>
+                </div>
+
+                <div class="section-card">
+                    <h3>Expériences à l'international</h3>
+                    <p>• Séjour linguistique en Espagne (2014)</p>
+                    <p>• Séjour linguistique en Angleterre (2016)</p>
+                </div>
+            </div>
+
+            <!-- Page 5: Loisirs -->
+            <div class="page" id="loisirs">
+                <h1>Centres d'Intérêt</h1>
+                
+                <div class="hobby-grid">
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🎨</div>
+                        <div class="hobby-name">Dessin</div>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🩰</div>
+                        <div class="hobby-name">Danse</div>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">✈️</div>
+                        <div class="hobby-name">Voyages</div>
+                    </div>
+                    <div class="hobby-card">
+                        <div class="hobby-icon">🎵</div>
+                        <div class="hobby-name">Musique</div>
+                    </div>
+                </div>
+
+                <div class="section-card" style="margin-top: 30px;">
+                    <h3>Engagements</h3>
+                    <p>• Bénévole chez Kfest France - Engagement Etudiant Association loi 1901</p>
+                    <p>• Women@Dior X UNESCO , un programme mondial porté par Dior en partenariat avec l'UNESCO. Ce programme vise à développer le leadership, l'autonomie, la créativité et l'engagement en faveur du développement durable chez les jeunes femmes. En tant que mentee, je bénéficie d'un accompagnement personnalisé, d'une formation au leadership à travers le programme "Dream for Change", et je participe à des projets promouvant l'égalité des genres et l'impact social.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
